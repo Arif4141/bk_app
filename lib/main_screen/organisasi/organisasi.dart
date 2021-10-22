@@ -1,0 +1,32 @@
+import 'package:bk_app/main_screen/dashboard/header.dart';
+import 'package:bk_app/utility/constant.dart';
+import 'package:flutter/material.dart';
+
+class organisasi extends StatefulWidget {
+  const organisasi({Key? key}) : super(key: key);
+  static const String routeName = '/organisasi';
+  @override
+  _organisasiState createState() => _organisasiState();
+}
+
+class _organisasiState extends State<organisasi> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: SingleChildScrollView(
+        padding: EdgeInsets.all(defaultPadding),
+        child: Container(
+          child: Column(
+            children: [
+              Header(),
+              SizedBox(height: 10),
+              Center(
+                child: Text("Organisasi"),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
